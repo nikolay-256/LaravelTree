@@ -1,4 +1,4 @@
-</<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -37,11 +37,21 @@ input[type=submit]:hover {
   padding: 20px;
 }
 </style>
-   
+
 </head>
 <body>
 
-<h1>Create New Devices</h1>
+<h1>Добавление нового товара</h1>
+
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
 <div class="container">
 
@@ -50,24 +60,28 @@ input[type=submit]:hover {
         {{ csrf_field() }}
 
        <div>
-          <label >Device Name</label>
-          <input type="text" name="name" placeholder="Device Name">
+          <label>Стоимость товара</label>
+          <input type="text" name="position" placeholder="Введите стоимость товара, пример: 123.40">
+      </div>
+
+       <div>
+          <label>Позиция товара в дереве товаров</label>
+          <input type="text" name="position" placeholder="Введите позицию товара в дереве товаров, пример: 1.2.1">
+      </div>
+      <div>
+            <label>Описание товара</label>
+            <textarea name="title" placeholder="Введите описание товара"></textarea>
 
       </div>
       <div>
-            <label >Device Description</label>
-            <textarea name="description" placeholder="Device Description"></textarea>
 
-      </div>
-      <div>
-
-            <input type="submit" value="Make Device">
+            <input type="submit" value="Добавить товар">
 
       </div>
 
-    </form>  
+    </form>
 
- </div>   
+ </div>
 
 </body>
 </html>
