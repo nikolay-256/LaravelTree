@@ -1,19 +1,18 @@
 # Отображение дерева товаров
 
-composer install
+- composer install
 
-
-cp .env.example .env
+- cp .env.example .env
 После, в файле .env необходимо отредактировать доступы к базе для своего пользователя.
 
 Выполнение миграций:
-php artisan migrate
+- php artisan migrate
 
 Генерация ключей:
-php artisan key:generate
+- php artisan key:generate
 
 Запуск теста:
-phpunit tests/Unit/ItemsOrderTest.php
+- phpunit tests/Unit/ItemsOrderTest.php
 
 Запуск:
-php artisan serve
+- php artisan serve
