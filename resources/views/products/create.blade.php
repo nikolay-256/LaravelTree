@@ -44,7 +44,7 @@ input[type=submit]:hover {
 <h1>Добавление нового товара</h1>
 
 @if ($errors->any())
-    <div class="alert alert-danger">
+    <div>
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -55,27 +55,28 @@ input[type=submit]:hover {
 
 <div class="container">
 
-    <form method="POST" action="/devicesaction">
+    <form method="POST" action="/product_create_action">
 
         {{ csrf_field() }}
 
        <div>
           <label>Стоимость товара</label>
-          <input type="text" name="position" placeholder="Введите стоимость товара, пример: 123.40">
+          <input type="text" name="price" value="{{ old('price') }}" placeholder="Введите стоимость товара, пример: 123.40">
       </div>
 
        <div>
-          <label>Позиция товара в дереве товаров</label>
-          <input type="text" name="position" placeholder="Введите позицию товара в дереве товаров, пример: 1.2.1">
+          <label>Позиция товара</label>
+          <input type="text" name="position" value="{{ old('position') }}" placeholder="Введите позицию товара в дереве товаров, пример: 1.2.1">
       </div>
       <div>
             <label>Описание товара</label>
-            <textarea name="title" placeholder="Введите описание товара"></textarea>
+            <textarea name="title" placeholder="Введите описание товара">{{ old('title') }}</textarea>
 
       </div>
       <div>
 
             <input type="submit" value="Добавить товар">
+            <a href="/" style="margin-left: 20px;">На главную</a>
 
       </div>
 
