@@ -13,7 +13,7 @@
 - php artisan key:generate
 
 Запуск теста:
-- phpunit tests/Unit/ItemsOrderTest.php
+- vendor/bin/phpunit tests/Unit/ItemsOrderTest.php
 
 Запуск:
 - php artisan serve
