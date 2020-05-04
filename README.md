@@ -2,6 +2,8 @@
 
 <a target="_blank" href="https://docs.google.com/document/d/1dZY1ofCrBBeT-kSoyBKOO_rmObbx8b5pZy9nys7TbrE/edit">Ссылка на задачу</a>
 
+Запуск:
+
 - composer install
 
 - cp .env.example .env
