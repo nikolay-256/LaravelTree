@@ -4,8 +4,8 @@
 
 </head>
 <body>
-<h1>Просмотр дерева товаров</h1>
-<a href="/create">Создать товар</a>
+<h1>View the product tree</h1>
+<a href="/create">Create Item</a>
 <ul>
 @include('products.tree.recursion', $items)
 </ul>

@@ -23,6 +23,6 @@ class PositionValidateRule implements Rule
 
     public function message(): string
     {
-        return 'Поле "Позиция товара", неверный формат ввода. Пример: 1.2.1';
+        return 'Field "Item position", invalid input format. Example: 1.2.1';
     }
 }

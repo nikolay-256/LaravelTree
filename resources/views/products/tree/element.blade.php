@@ -1,1 +1,1 @@
-{{$item->getTitle()}} {{$item->getPrice()}} руб.
+{{$item->getTitle()}} {{$item->getPrice()}} $

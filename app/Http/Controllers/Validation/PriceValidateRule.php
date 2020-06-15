@@ -21,6 +21,6 @@ class PriceValidateRule implements Rule
 
     public function message(): string
     {
-        return 'Поле "Стоимость товара" должно быть не пустым и числовым';
+        return 'Field "Item cost" must not be empty and numeric';
     }
 }

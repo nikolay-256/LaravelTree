@@ -17,6 +17,6 @@ class TitleValidateRule implements Rule
 
     public function message(): string
     {
-        return 'Поле "Описание товара" должно быть не пустым';
+        return 'Field "Item description" must not be empty';
     }
 }

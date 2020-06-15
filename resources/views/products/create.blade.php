@@ -41,7 +41,7 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h1>Добавление нового товара</h1>
+<h1>Adding a New Product</h1>
 
 @if ($errors->any())
     <div>
@@ -60,23 +60,23 @@ input[type=submit]:hover {
         {{ csrf_field() }}
 
        <div>
-          <label>Стоимость товара</label>
-          <input type="text" name="price" value="{{ old('price') }}" placeholder="Введите стоимость товара, пример: 123.40">
+          <label>Item cost</label>
+          <input type="text" name="price" value="{{ old('price') }}" placeholder="example: 123.40">
       </div>
 
        <div>
-          <label>Позиция товара</label>
-          <input type="text" name="position" value="{{ old('position') }}" placeholder="Введите позицию товара в дереве товаров, пример: 1.2.1">
+          <label>Item position</label>
+          <input type="text" name="position" value="{{ old('position') }}" placeholder="example: 1.2.1">
       </div>
       <div>
-            <label>Описание товара</label>
-            <textarea name="title" placeholder="Введите описание товара">{{ old('title') }}</textarea>
+            <label>Item description</label>
+            <textarea name="title" placeholder="description">{{ old('title') }}</textarea>
 
       </div>
       <div>
 
-            <input type="submit" value="Добавить товар">
-            <a href="/" style="margin-left: 20px;">На главную</a>
+            <input type="submit" value="Add item">
+            <a href="/" style="margin-left: 20px;">To main page</a>
 
       </div>
 

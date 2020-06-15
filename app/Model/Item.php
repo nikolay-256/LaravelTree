@@ -5,7 +5,7 @@ namespace App\Model;
 class Item
 {
     /**
-     * Стоимость товара
+     * Cost of item
      *
      * @var float
      */
