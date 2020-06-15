@@ -1,1 +1,1 @@
-{{$item->getTitle()}} {{$item->getPrice()}} $
+{{$item->getTitle()}} <b>{{$item->getPrice()}}</b> $
